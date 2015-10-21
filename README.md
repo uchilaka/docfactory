@@ -56,7 +56,7 @@ PDF417:
 
 ![Example PDF 417](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
-You can preview this @ work <a href='https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417' target='_blank'>in your browser</a>.
+You can preview this @ work <a href='https://com-uchechilaka-docfactory.appspot.com/?type=PDF417&size=10&data=Hello World' target='_blank'>in your browser</a>.
 
 Fancy QR:
 
