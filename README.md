@@ -24,6 +24,9 @@ This port of Nicola's project focuses on 2 things
 * PHP >= 5.4 with GD and ImagMagick (http://www.imagemagick.org/script/formats.php)
 * TCPDF library (included)
 
+# Format
+* All images generated will be PNG24 with transparency.
+
 # Usage
 
 You should be able to drop in this mini-app on a PHP enabled server and have it ready to go. 
@@ -34,11 +37,11 @@ You should be able to drop in this mini-app on a PHP enabled server and have it 
 
 Let's say, you have the following data packet you would like to include in your HTML page as a PDF417:
 
-````{
+    {
         payload: "I'm here!",
         size: 8,
         rgb: "50,50,50"
-}````
+    }
 
 You can very easily, with a GET call, build a URL that looks something like this, and will automatically generate the QR / PDF417 image in your HTML code:
 
