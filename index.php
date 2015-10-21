@@ -10,7 +10,13 @@ require_once( makepath(dirname(__FILE__), 'tcpdf_barcodes_2d.php') );
 require_once( makepath(dirname(__FILE__), 'tools', 'dir.php') );
 
 // constants
-define('TMP_DIR', makepath(dirname(__FILE__), 'temp') . DIRECTORY_SEPARATOR);
+if(array_key_exists('APPLICATION_ID', $_SERVER)) {
+    # Google cloud!
+    $tmp_dir = 'gs://com-larcity-static/temp/';
+} else {
+    $tmp_dir = makepath(dirname(__FILE__), 'temp') . DIRECTORY_SEPARATOR;
+}
+define('TMP_DIR', $tmp_dir);
 
 $requested_code_type = empty($_GET['type']) ? 'PDF417' : strtoupper(trim(filter_var($_GET['type'], FILTER_SANITIZE_STRING)));
 
