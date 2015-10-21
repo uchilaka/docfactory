@@ -5,6 +5,9 @@ api_version: 1
 
 env_variables:
     # Set environment variables here
+    
+skip_files:
+- ^(.*/)?releases/.*$
 
 handlers:
 - url: /.*

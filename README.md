@@ -75,7 +75,7 @@ So... that means you can also run the PDF 417 via HTTPS as seen below:
 
 # The Future
 
-Driverless cars!! ...and Teleporting... anyone? Yeah, I'm iffy on that one too. As far as this library goes - yes, there will be updates. The included 
+Driverless cars!! ...and Teleporting... anyone? As far as this library goes - yes, there will be updates. The included 
 TCPDF library is worth a look for use in generating your PDF docs for your application and have all that reside within your implementation of the docfactory 
 project. This is an example of a (super limited) use of the library to provide QR and PDF417 web capabilities. As I include new functionality for use 
 in my app projects, you'll get them here too.
