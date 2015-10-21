@@ -8,7 +8,7 @@ Here are links to the original work:
 - http://www.sourceforge.net/projects/tcpdf
 - https://github.com/tecnickcom/TCPDF
 
-You can read the full original README <a href="README_TCPDF.TXT">here</a>.
+You can read the full original README [here](README_TCPDF.TXT).
 
 # What this does
 
@@ -34,11 +34,11 @@ You should be able to drop in this mini-app on a PHP enabled server and have it 
 
 Let's say, you have the following data packet you would like to include in your HTML page as a PDF417:
 
-    {
+````{
         payload: "I'm here!",
         size: 8,
         rgb: "50,50,50"
-    }
+}````
 
 You can very easily, with a GET call, build a URL that looks something like this, and will automatically generate the QR / PDF417 image in your HTML code:
 
