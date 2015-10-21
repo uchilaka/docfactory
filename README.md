@@ -42,7 +42,10 @@ You can very easily, with a GET call, build a URL that looks something like this
 
 An example of this @ work is below: 
 
-<img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=FANCYQR" />
+    <img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417" />
+
+![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
+
 
 ## Case 2: Generating Fancy QR codes in-line with HTML
 
@@ -56,7 +59,9 @@ AppEngine offering for super-light apps... you're entitled to that opinion! :) )
 
 So... that means you can also run the PDF 417 via HTTPS as seen below:
 
-<img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=FANCYQR" />
+    <img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417" />
+
+![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
 
 
