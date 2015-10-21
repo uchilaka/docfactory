@@ -98,5 +98,5 @@ in my app projects, you'll get them here too.
 
 Cheers!
 
-# [@UcheChilaka](https://twitter.com/uchechilaka)
+[@UcheChilaka](https://twitter.com/uchechilaka)
 
