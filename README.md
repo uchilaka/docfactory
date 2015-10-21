@@ -4,6 +4,7 @@ I'd like to give credit where it is due. The source of this project is some grea
 support that project @ http://sourceforge.net/donate/index.php?group_id=128076 or via PayPal at paypal@tecnick.com
 
 Here are links to the original work:
+
 - http://www.tcpdf.org
 - http://www.sourceforge.net/projects/tcpdf
 - https://github.com/tecnickcom/TCPDF
@@ -55,11 +56,15 @@ PDF417:
 
 ![Example PDF 417](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
+You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
+
 Fancy QR:
 
     <img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
 
 ![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here)
+
+You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=FANCYQR" target="_blank">in your browser</a>
 
 # Secure Access to Demo API
 
