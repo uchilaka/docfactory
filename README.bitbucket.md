@@ -38,42 +38,33 @@ You should be able to drop in this mini-app on a PHP enabled server and have it 
 
 Let's say, you have the following data packet you would like to include in your HTML page as a PDF417 or Fancy QR Code (rounded corners, more pleasant to the eyes :)):
 
-<!-- Github syntax -->
-```javascript
-{
-payload: "I'm here!",
-size: 8,
-rgb: "50,50,50"
-}
-```
+    {
+        payload: "I'm here!",
+        size: 8,
+        rgb: "50,50,50"
+    }
 
 You can very easily, with a GET call, build a URL that looks something like this, and will automatically generate the QR / PDF417 image in your HTML code:
 
-```html
-<img src="{your_app_root}/?size=8&rgb=50,50,50&payload=I'm here" />
-```
+    <img src="{your_app_root}/?size=8&rgb=50,50,50&payload=I'm here" />
 
 An example of this @ work is below: 
 
 PDF417:
 
-```html
-<img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
-```
+    <img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
 
 ![Example PDF 417](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
-You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?type=PDF417&size=10&data=Hello%20World){:target="_blank"}.
+You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?type=PDF417&size=10&data=Hello%20World"){:target="_blank"}.
 
 Fancy QR:
 
-```html
-<img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
-```
+    <img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
 
 ![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here)
 
-You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=10&data=Hello%20World){:target="_blank"}.
+You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=10&data=Hello%20World"){:target="_blank"}.
 
 # Secure Access to Demo API
 
@@ -83,9 +74,7 @@ AppEngine offering for super-light apps... you're entitled to that opinion! :) )
 
 So... that means you can also run the PDF 417 via HTTPS as seen below:
 
-```html    
-<img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
-```
+    <img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
 
 ![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
