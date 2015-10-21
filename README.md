@@ -33,9 +33,9 @@ You should be able to drop in this mini-app on a PHP enabled server and have it 
 
 ## Parameters
 
-## Case 1: Generating PDF417 barcodes in-line with HTML 
+## Case 1: Generating barcodes in-line with HTML 
 
-Let's say, you have the following data packet you would like to include in your HTML page as a PDF417:
+Let's say, you have the following data packet you would like to include in your HTML page as a PDF417 or Fancy QR Code (rounded corners, more pleasant to the eyes :)):
 
     {
         payload: "I'm here!",
@@ -49,18 +49,17 @@ You can very easily, with a GET call, build a URL that looks something like this
 
 An example of this @ work is below: 
 
+PDF417:
+
     <img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
 
-![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
+![Example PDF 417](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
+Fancy QR:
 
-## Case 2: Generating Fancy QR codes in-line with HTML
+    <img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
 
-Still working on this. Runs OK on my local server, but isn't running quite right just yet on the demo API (see above @ http://com-uchechilaka-docfactory.appspot.com). 
-I believe this has something to do with ImagMagick (http://www.imagemagick.org/script/formats.php) - I'll keep you posted. Nevertheless, this should work OK on your 
-PHP server that meets the tech requirements above:
-
-    <img src="{your_app_root}/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
+![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here)
 
 # Secure Access to Demo API
 
