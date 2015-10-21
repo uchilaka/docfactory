@@ -56,7 +56,7 @@ PDF417:
 
 ![Example PDF 417](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
-You can preview this @ work [in your browser](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
+You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417" target="_blank">in your browser</a>.
 
 Fancy QR:
 
@@ -64,7 +64,7 @@ Fancy QR:
 
 ![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here)
 
-You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=FANCYQR" target="_blank">in your browser</a>
+You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=FANCYQR" target="_blank">in your browser</a>.
 
 # Secure Access to Demo API
 
