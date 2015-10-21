@@ -21,10 +21,14 @@ This port of Nicola's project focuses on 2 things
 # Requirements 
 
 * Not extensively tested (yet)!
-* PHP >= 5.4
+* PHP >= 5.4 with GD and ImagMagick (http://www.imagemagick.org/script/formats.php)
 * TCPDF library (included)
 
 # Usage
+
+You should be able to drop in this mini-app on a PHP enabled server and have it ready to go. 
+
+## Parameters
 
 ## Case 1: Generating PDF417 barcodes in-line with HTML 
 
@@ -42,14 +46,18 @@ You can very easily, with a GET call, build a URL that looks something like this
 
 An example of this @ work is below: 
 
-    <img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417" />
+    <img src="http://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
 
 ![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
 
 ## Case 2: Generating Fancy QR codes in-line with HTML
 
-Still working on this. Runs OK on my local server, but isn't running quite right just yet on the demo API (see above @ http://com-uchechilaka-docfactory.appspot.com)
+Still working on this. Runs OK on my local server, but isn't running quite right just yet on the demo API (see above @ http://com-uchechilaka-docfactory.appspot.com). 
+I believe this has something to do with ImagMagick (http://www.imagemagick.org/script/formats.php) - I'll keep you posted. Nevertheless, this should work OK on your 
+PHP server that meets the tech requirements above:
+
+    <img src="{your_app_root}/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
 
 # Secure Access to Demo API
 
@@ -59,9 +67,17 @@ AppEngine offering for super-light apps... you're entitled to that opinion! :) )
 
 So... that means you can also run the PDF 417 via HTTPS as seen below:
 
-    <img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417" />
+    <img src="https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=6&type=PDF417" />
 
 ![Example PDF 417 (HTTPS)](https://com-uchechilaka-docfactory.appspot.com/?data=Hello%20World&size=10&type=PDF417)
 
+# The Future
+
+Driverless cars!! ...and Teleporting... anyone? Yeah, I'm iffy on that one too. As far as this library goes - yes, there will be updates. The included 
+TCPDF library is worth a look for use in generating your PDF docs for your application and have all that reside within your implementation of the docfactory 
+project. This is an example of a (super limited) use of the library to provide QR and PDF417 web capabilities. As I include new functionality for use 
+in my app projects, you'll get them here too.
+
+Cheers!
 
 
