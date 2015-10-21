@@ -1,5 +1,7 @@
 releases
+releases/.*
 examples
+examples/.*
 publish.sh
 deploy.sh
 push.sh
