@@ -121,6 +121,7 @@ try {
             header('Content-Type: image/png');
             imagepng($img, null);
             imagedestroy($img);
+            unlink($temp_filename);
             break;
     }
 } catch (Exception $ex) {
