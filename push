@@ -5,7 +5,7 @@ XDIR=$(pwd)
 BRANCHF="$XDIR/VERSION_BRANCH"
 CURBRANCH=$(cat $BRANCHF)
 
-if [ -q "$CURBRANCH" ]; then
+if [ -z "$CURBRANCH" ]; then
    echo Current branch not found. Will attempt to push to master...
    CURBRANCH="master"
 fi
