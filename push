@@ -1,10 +1,23 @@
-#!/bin/sh
+#!/bin/bash
 # @TODO include handling of tree/branch arguments in the 1 line commit
+
+XDIR=$(pwd)
+BRANCHF="$XDIR/VERSION_BRANCH"
+CURBRANCH=$(cat $BRANCHF)
+
+if [ -q "$CURBRANCH" ]; then
+   echo Current branch not found. Will attempt to push to master...
+   CURBRANCH="master"
+fi
+
+echo "Current branch is ${CURBRANCH}. Committing..."
+
 git add -A
 if [[ ! -z "$1" ]]; then 
     COMMENT="$1"
 else
     COMMENT="Nothing to see here. Just committing progress..."
 fi
+
 git commit -m "$COMMENT"
-git push origin master
+git push origin $CURBRANCH
