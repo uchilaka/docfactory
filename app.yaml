@@ -3,13 +3,19 @@ version: 1
 runtime: php55
 api_version: 1
 
-env_variables:
+#env_variables:
     # Set environment variables here
     
 skip_files:
 - ^(.*/)?releases/.*$
 
 handlers:
+#- url: /(.*\.(gif|png|jpg))$
+#  static_files: \1 
+    
+- url: /googlee7be922d338f88b9.html
+  script: googlee7be922d338f88b9.html
+    
 - url: /.*
   script: index.php
   
