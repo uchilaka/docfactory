@@ -3,3 +3,5 @@ examples
 publish.sh
 deploy.sh
 push.sh
+tmp/
+#temp/
