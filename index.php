@@ -19,6 +19,7 @@ function check_for_gd() {
     }
 }
 
+require_once( makepath(dirname(__FILE__), 'tcpdf_barcodes_1d.php'));
 require_once( makepath(dirname(__FILE__), 'tcpdf_barcodes_2d.php') );
 require_once( makepath(dirname(__FILE__), 'tools', 'dir.php') );
 
@@ -134,15 +135,18 @@ try {
 
         case 'BARCODE':
         case '2D':
-            /** Handle raw-looking QR * */
+            /* Size is requirement
             $w = min(10, max(5, $size));
             $h = $w;
+            */
             $barcodeobj = new TCPDFBarcode($payload, 'C128');
             if ($format === O_FORMAT_SVG):
+                // for now, force height
+                $h = 30;
                 /** @TODO support figuring out color names or validating for them in GET `color` * */
-                $barcodeobj->getBarcodeSVG($w, $h, 'black');
+                $barcodeobj->getBarcodeSVG(2, 30, 'black');
             else:
-                $barcodeobj->getBarcodePNG($w, $h, [$red, $green, $blue]);
+                $barcodeobj->getBarcodePNG(2, 30, [$red, $green, $blue]);
             endif;
             break;
 
