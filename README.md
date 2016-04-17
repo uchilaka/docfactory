@@ -7,11 +7,9 @@ Hey folks - included support for C128 barcodes. Enjoy!
 <img src="{your_app_root}/?rgb=50,50,50&payload=0001234567890&type=BARCODE" />
 ```
 
-# Preview (Barcode - C128)
+## Preview (Barcode - C128)
 
-```html
 <img src="http://com-uchechilaka-docfactory.appspot.com/?type=BARCODE&payload=0001234567890" />
-```
 
 <hr />
 
