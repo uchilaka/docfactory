@@ -1,3 +1,14 @@
+# Updates
+###2016-04-26 
+
+Hey folks - included support for C128 barcodes. Enjoy!
+
+```html
+<img src="{your_app_root}/?rgb=50,50,50&payload=2016123456789&type=BARCODE" />
+```
+
+<hr />
+
 # Orignal Work
 
 I'd like to give credit where it is due. The source of this project is some great work by Nicola Asuni that proved super-easy to use. You can 
