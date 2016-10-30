@@ -4,12 +4,12 @@
 Hey folks - included support for C128 barcodes. Enjoy!
 
 ```html
-<img src="{your_app_root}/?rgb=50,50,50&payload=0001234567890&type=BARCODE" />
+<img src="{your_app_root}/?rgb=50,50,50&data=0001234567890&type=BARCODE" />
 ```
 
 ## Preview (Barcode - C128)
 
-<img src="http://com-uchechilaka-docfactory.appspot.com/?type=BARCODE&payload=0001234567890" />
+<img src="http://com-uchechilaka-docfactory.appspot.com/?type=BARCODE&data=0001234567890" />
 
 <hr />
 
@@ -56,7 +56,7 @@ Let's say, you have the following data packet you would like to include in your 
 <!-- Github syntax -->
 ```javascript
 {
-payload: "I'm here!",
+data: "I'm here!",
 size: 8,
 rgb: "50,50,50"
 }
@@ -65,7 +65,7 @@ rgb: "50,50,50"
 You can very easily, with a GET call, build a URL that looks something like this, and will automatically generate the QR / PDF417 image in your HTML code:
 
 ```html
-<img src="{your_app_root}/?size=8&rgb=50,50,50&payload=I'm here" />
+<img src="{your_app_root}/?size=8&rgb=50,50,50&data=I'm here" />
 ```
 
 An example of this @ work is below: 
@@ -83,10 +83,10 @@ You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.
 Fancy QR:
 
 ```html
-<img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here" />
+<img src="http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&data=I'm here" />
 ```
 
-![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&payload=I'm here)
+![Example Fancy QR](http://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=8&rgb=50,50,50&data=I'm here)
 
 You can preview this @ work <a href="https://com-uchechilaka-docfactory.appspot.com/?type=FANCYQR&size=10&data=Hello%20World" target="_blank">in your browser</a>.
 
